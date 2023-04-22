@@ -1,0 +1,65 @@
+/* Temporary Borders */
+header {
+ /*    border: 3px solid red; */
+}
+
+main {
+    border: 3px solid green;
+}
+
+footer {
+    border: 3px solid blue;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    margin: 0;
+
+}
+
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Grid Page Layout */
+
+header {
+display: grid;
+grid-template-rows: .3fr 3fr;
+height: 100vh;
+}
+
+.header-content {
+    border: 3px solid green;
+    grid-column: 1/4;
+    padding: 1em;
+}
+
+.menu {
+    grid-column: 1 / 4;
+    border: 1px solid salmon;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    height: 40vh;
+}
+
+/* Color Styling */
+
+.menu {
+    background-color: salmon;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
