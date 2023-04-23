@@ -5,6 +5,7 @@ header {
 
 main {
     border: 3px solid green;
+
 }
 
 footer {
@@ -16,7 +17,6 @@ body {
     min-height: 100vh;
     display: grid;
     margin: 0;
-
 }
 
 
@@ -35,7 +35,6 @@ height: 100vh;
 .header-content {
     border: 3px solid green;
     grid-column: 1/4;
-    padding: 1em;
 }
 
 .menu {
@@ -50,10 +49,15 @@ main {
     height: 40vh;
 }
 
+/* Margin - Padding */
+.header-content {
+    padding: 2em;
+}
+
 /* Color Styling */
 
 .menu {
-    background-color: salmon;
+    background-color: #e29977;
     color: white;
     text-decoration: none;
 }
@@ -62,4 +66,17 @@ main {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+body {
+    background-color: #EEE7E7;
+}
+/* Images */
+
+.logo {
+    border: 10px solid #526356;
+    background-color: rgb(202, 231, 142);
+    border-radius: 13%;
+    width: 40%;
+    max-width: 522px;
 }
