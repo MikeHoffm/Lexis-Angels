@@ -12,24 +12,64 @@
 </head>
 <body>
     <header>
-        <!-- Nav Bar at Very Top of screen -->
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="">Services</a>
-            <a href="">Contact Us</a>
+        <!-- Nav Bar Top of screen -->
+        <nav class="header-nav">
+            <a href="">Home</a>
+            <a href="#services-container">Services</a>
+            <a href="#quote-container">Contact Us</a>
         </nav>
-        <div class="header-content">
-            <img class="logo" src="images/logo.png" alt="company logo">
-            <h3>This is a Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-            <!-- Logo --> <!-- Greeting paragraph directly next to logo-->
+        <!-- Introductory Content-->
+        <div class="header-container">
+          
+                <img class="logo" src="images/logo.png" alt="">
+         
+            <div class="header-intro">
+                <h1 class="header-title">We'll get you spick <br> and span!</h1>
+                <p class="header-p">For <strong>X</strong> years Lexi's Angels has been dedicated to providing every customers with the highest quality of service.  Whether it's your home or business, we'll get you spotless!</p>
+            </div>
         </div>
     </header>
     <main>
-       <!-- 3 seperate sections: Services, Testimonials, Get a Quote--> 
+       <div id="services-container">
+        <h1>Our Services</h1>
+            <div class="services-cards-container">
+                <div>Service1</div>
+                <div>Service2</div>
+                <div>Service3</div>
+                <div>Service4</div>
+                <div>Service5</div>
+                <div>Service6</div>
+            </div>
+       </div>
+       <div id="testimonial-container">
+        <h1>Testimonials</h1>
+            <div class="test-cards-container">
+                <div>Testimonial Box1</div>
+                <div>Testimonial Box2</div>
+            </div>
+       </div>
+       <div id="quote-container">
+        <h1>Get a Quote</h1>
+            <div class="quote-card-container">
+                <div>
+                    <h1>Get Your Estimate</h1>
+                    <p>Get in contact with us for a free estimate today!</p>
+                </div>
+
+                <div>
+                    <p>Phone: XXX-XXX-XXXX</p>
+                    <p><a href="mailto:email@example.com">Email Us</a></p>
+                </div>
+            </div>
+       </div> 
     </main>
     <footer>
         <!-- Footer w/contact info, socials-->
+        <div class="footer-links">
+            <a href="">Phone</a>
+            <a href="">Email</a>
+            <a href="">Facebook</a>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,82 +1,172 @@
 /* Temporary Borders */
 header {
- /*    border: 3px solid red; */
-}
-
-main {
-    border: 3px solid green;
-
-}
-
-footer {
-    border: 3px solid blue;
-}
-
-
-body {
-    min-height: 100vh;
+       border: 3px solid red;
+   }
+   
+   main {
+       /* border: 3px solid green; */
+   
+   }
+   
+   footer {
+       /* border: 3px solid blue; */
+   }
+   
+   
+   body {
+       min-height: 100vh;
+       display: grid;
+       grid-template-rows: 1fr 3fr .5fr;
+       margin: 0;
+   }
+   
+   
+   * {
+       font-family: 'Comfortaa', cursive;
+   }
+   
+   /* Grid Page Layout */
+   
+                /* Header Layout */
+   header { 
     display: grid;
-    margin: 0;
-}
+    grid-template-rows: .2fr 1fr .1fr;
+    grid-template-columns: 1fr 1fr;
+   }
 
+   /* Sectioning off header nav and header content , delete later */
+   header > div, header > nav {
+    border: 5px solid purple;
+    margin: 4px;
+   }
+   .header-logo, .header-intro {
+    border: 4px solid green;
+   }
 
-* {
-    font-family: 'Comfortaa', cursive;
-}
+   .header-nav, .header-container {
+    grid-column: 1 / 3;
+   }
 
-/* Grid Page Layout */
-
-header {
-display: grid;
-grid-template-rows: .3fr 3fr;
-height: 100vh;
-}
-
-.header-content {
-    border: 3px solid green;
-    grid-column: 1/4;
-}
-
-.menu {
-    grid-column: 1 / 4;
-    border: 1px solid salmon;
+   /* Nav Positioning */
+   .header-nav {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+
+   }
+
+/* Content Positioning*/ 
+   .header-container {
+    grid-row: 2 / 4;
+    display: flex;
+    margin: 2.5em 5em 2.5em 5em;
+    gap: 4em;
+   }
+   
+
+.header-intro {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
 }
 
+                /* Main Layout */
 main {
-    height: 40vh;
+    border: 6px solid blue;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
-/* Margin - Padding */
-.header-content {
-    padding: 2em;
+/* Delete Later - Sectioning off sections */
+                /* Services Section */
+#services-container, #testimonial-container, #quote-container {
+    border: 5px solid red;
+    margin: 4px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    margin: 2.5em 5em 2.5em 5em;
 }
 
-/* Color Styling */
-
-.menu {
-    background-color: #e29977;
-    color: white;
-    text-decoration: none;
+.services-cards-container {
+    display: grid;
+    border: 5px solid blueviolet;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    height: 25em;
+    margin: 3em;
 }
 
-.menu > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.services-cards-container > div {
+    border: 4px solid red;
 }
 
-body {
-    background-color: #EEE7E7;
+                /* Testimonials Section */
+.test-cards-container {
+    border: 4px solid purple;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 25em;
+    margin: 3em;
+    gap: 2em;
 }
-/* Images */
 
-.logo {
-    border: 10px solid #526356;
-    background-color: rgb(202, 231, 142);
-    border-radius: 13%;
-    width: 40%;
-    max-width: 522px;
+.test-cards-container > div {
+    border: 4px solid red;
 }
+
+                /* Quote Section */
+   /* Color & Styling */
+   
+   .header-nav, footer {
+       background-color: #e29977;
+       color: white;
+       text-decoration: none;
+       font-size: 1.3em;
+       font-weight: bold;
+   }
+
+   .header-intro {
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+   
+   }
+   
+    a {
+       text-decoration: none;
+       color: white;
+       font-weight: bold;
+   }
+   
+   body {
+       background-color: #EEE7E7;
+   }
+   /* Images */
+   
+   .logo {
+    width: 50%;
+    
+   }
+
+
+   /* Mobile Design */
+
+   @media only screen and (max-width: 850px) {
+
+    /* Header Layout */
+    .header-container {
+        border: 5px solid pink;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+
+    .header-intro {
+        width: 100%;
+    }
+   }
